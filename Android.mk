@@ -8,6 +8,7 @@ LOCAL_SRC_FILES := AndroidAutoStubPrebuilt.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
+LOCAL_DEX_PREOPT := false
 LOCAL_REQUIRED_MODULES := com.google.android.projection.gearhead.xml AndroidAuto.prop AndroidAutoOverlay
 include $(BUILD_PREBUILT)
 
@@ -17,7 +18,6 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT_ETC)/permissions
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
-LOCAL_DEX_PREOPT := false
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
