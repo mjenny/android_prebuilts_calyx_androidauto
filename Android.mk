@@ -10,6 +10,7 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PRODUCT_MODULE := true
 LOCAL_DEX_PREOPT := false
+LOCAL_ENFORCE_USES_LIBRARIES := false
 LOCAL_REQUIRED_MODULES := com.google.android.projection.gearhead.xml AndroidAuto.prop AndroidAutoOverlay
 include $(BUILD_PREBUILT)
 
